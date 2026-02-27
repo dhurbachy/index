@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +24,65 @@
         }
 
         header {
-            background-color: var(--primary-blue);
-            color: white;
-            text-align: center;
-            padding: 3rem 1rem;
+            background-color: #1a1a1a;
+            /* Professional Dark Charcoal */
+            color: #ffffff;
+            padding: 4rem 2rem;
+            border-bottom: 4px solid #004494;
+            /* Your primary blue as an accent */
         }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Left-aligned for a cleaner look */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            /* Muted grey for sub-text */
+            margin: 0.5rem 0 1.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #004494;
+            /* Highlights blue on hover */
+        }
+
+        .contact-info i {
+            color: #004494;
+            /* Blue icons for a professional pop of color */
+        }
+
 
         .profile-img {
             width: 150px;
@@ -42,15 +97,36 @@
             margin: 2rem auto;
             background: white;
             padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2 { color: var(--dark-blue); margin-top: 0; }
-        .section-title { border-bottom: 2px solid var(--primary-blue); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        h1,
+        h2 {
+            color: var(--dark-blue);
+            margin-top: 0;
+        }
 
-        .experience-item { margin-bottom: 2rem; }
-        .job-title { font-weight: bold; font-size: 1.2rem; color: var(--primary-blue); }
-        .job-meta { font-style: italic; color: #666; margin-bottom: 0.5rem; }
+        .section-title {
+            border-bottom: 2px solid var(--primary-blue);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+        }
+
+        .job-meta {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
 
         .contact-info {
             display: flex;
@@ -60,83 +136,115 @@
             margin-top: 1rem;
         }
 
-        .contact-info a { color: white; text-decoration: none; font-size: 0.9rem; }
-        .contact-info a:hover { text-decoration: underline; }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
 
-        ul { padding-left: 1.2rem; }
-        li { margin-bottom: 0.5rem; }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
 
-        footer { text-align: center; padding: 2rem; color: #888; font-size: 0.9rem; }
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <!-- Placeholder for profile image if hosted, otherwise uses initials -->
-    <div style="background:#fff; color:#004494; width:100px; height:100px; border-radius:50%; margin:0 auto 1rem; line-height:100px; font-size:2rem; font-weight:bold;">DC</div>
-    <h1>DHRUB CHAUDHARY</h1>
-    <p>Experienced Frontend Developer & Software Engineer</p>
-    <div class="contact-info">
-        <a href="mailto:dhurbac66@gmail.com"><i class="fas fa-envelope"></i> dhurbac66@gmail.com</a>
-        <a href="tel:9815360575"><i class="fas fa-phone"></i> 9815360575</a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <header>
+    <div class="header-container">
+        <h1>DHRUB CHAUDHARY</h1>
+        <p>Experienced Software Engineer</p>
+        
+        <div class="contact-info">
+            <a href="mailto:dhurbac66@gmail.com">
+                <i class="fas fa-envelope"></i> dhurbac66@gmail.com
+            </a>
+            <a href="tel:9815360575">
+                <i class="fas fa-phone"></i> 9815360575
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
     </div>
 </header>
 
-<div class="container">
-    <section>
-        <h2 class="section-title">About Me</h2>
-        <p>Results-driven Software Engineer with 4+ years of experience in frontend and full-stack development, including banking solutions. Expert in building scalable UIs, secure financial systems, and reliable backend services.</p>
-    </section>
 
-    <section>
-        <h2 class="section-title">Experiences</h2>
-        
-        <div class="experience-item">
-            <div class="job-title">Software Engineer</div>
-            <div class="job-meta">Amnil Technologies Pvt. Ltd. | 2025 – Present</div>
-            <ul>
-                <li>Delivering banking and fintech solutions for major institutions like Himalayan Bank and Machhapuchchhre Bank.</li>
-                <li>Contributing to secure, production-grade financial applications.</li>
-            </ul>
-        </div>
+    <div class="container">
+        <section>
+            <h2 class="section-title">About Me</h2>
+            <p>Results-driven Software Engineer with 4+ years of experience in frontend and full-stack development,
+                including banking solutions. Expert in building scalable UIs, secure financial systems, and reliable
+                backend services.</p>
+        </section>
 
-        <div class="experience-item">
-            <div class="job-title">Software Engineer</div>
-            <div class="job-meta">Metalogic Software Pvt. Ltd. | 2024 – 2025</div>
-            <ul>
-                <li>Developed genealogy and caste management systems.</li>
-                <li>Managed AWS deployments and CI/CD pipelines.</li>
-                <li>Optimized UI/UX for secure financial transactions.</li>
-            </ul>
-        </div>
+        <section>
+            <h2 class="section-title">Experiences</h2>
 
-        <div class="experience-item">
-            <div class="job-title">Associate Software Engineer</div>
-            <div class="job-meta">Tukaatu Services Pvt. Ltd. | 2020 – 2023</div>
-            <ul>
-                <li>Built logistics web applications with real-time workflows.</li>
-                <li>Developed full-scale e-commerce platforms with scalable UI systems.</li>
-            </ul>
-        </div>
-    </section>
+            <div class="experience-item">
+                <div class="job-title">Software Engineer</div>
+                <div class="job-meta">Amnil Technologies Pvt. Ltd. | 2025 – Present</div>
+                <ul>
+                    <li>Delivering banking and fintech solutions for major institutions like Himalayan Bank and
+                        Machhapuchchhre Bank.</li>
+                    <li>Contributing to secure, production-grade financial applications.</li>
+                </ul>
+            </div>
 
-    <section>
-        <h2 class="section-title">Education</h2>
-        <p><strong>Tribhuvan University</strong><br>
-        Bachelor of Science in Computer Science and Information Technology (Bsc.CSIT)<br>
-        2018 – 2023</p>
-    </section>
-</div>
+            <div class="experience-item">
+                <div class="job-title">Software Engineer</div>
+                <div class="job-meta">Metalogic Software Pvt. Ltd. | 2024 – 2025</div>
+                <ul>
+                    <li>Developed genealogy and caste management systems.</li>
+                    <li>Managed AWS deployments and CI/CD pipelines.</li>
+                    <li>Optimized UI/UX for secure financial transactions.</li>
+                </ul>
+            </div>
 
-<footer>
-    &copy; <span id="current-year"></span> Dhrub Chaudhary. Built with passion and code.
-</footer>
+            <div class="experience-item">
+                <div class="job-title">Associate Software Engineer</div>
+                <div class="job-meta">Tukaatu Services Pvt. Ltd. | 2020 – 2023</div>
+                <ul>
+                    <li>Built logistics web applications with real-time workflows.</li>
+                    <li>Developed full-scale e-commerce platforms with scalable UI systems.</li>
+                </ul>
+            </div>
+        </section>
 
-<script>
-    // Get the current year and inject it into the span with id "current-year"
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-</script>
+        <section>
+            <h2 class="section-title">Education</h2>
+            <p><strong>Tribhuvan University</strong><br>
+                Bachelor of Science in Computer Science and Information Technology (Bsc.CSIT)<br>
+                2018 – 2023</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; <span id="current-year"></span> Dhrub Chaudhary. Built with passion and code.
+    </footer>
+
+    <script>
+        // Get the current year and inject it into the span with id "current-year"
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
