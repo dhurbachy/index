@@ -131,8 +131,12 @@
 </div>
 
 <footer>
-    &copy; 2024 Dhrub Chaudhary. Built with passion and code.
+    &copy; <span id="current-year"></span> Dhrub Chaudhary. Built with passion and code.
 </footer>
 
+<script>
+    // Get the current year and inject it into the span with id "current-year"
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
