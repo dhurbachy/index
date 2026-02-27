@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhrub Chaudhary | Software Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com" />
+
     <style>
         :root {
             --primary-blue: #004494;
@@ -24,12 +26,10 @@
         }
 
         header {
-            background-color: #1a1a1a;
-            /* Professional Dark Charcoal */
+            background-color: #060725;
             color: #ffffff;
-            padding: 4rem 2rem;
-            border-bottom: 4px solid #004494;
-            /* Your primary blue as an accent */
+            /* padding: 4rem 2rem; */
+            border-bottom: 4px solid #b6bac1;
         }
 
         .header-container {
@@ -41,20 +41,40 @@
             /* Left-aligned for a cleaner look */
         }
 
+        .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Prevents stretching */
+    border: 2px solid #ddd;
+}
+
+.title-text h1 {
+    margin: 0; /* Removes default spacing */
+}
+
+
         header h1 {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             letter-spacing: -1px;
             margin: 0;
             color: #ffffff;
         }
 
         header p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #cccccc;
-            /* Muted grey for sub-text */
-            margin: 0.5rem 0 1.5rem 0;
+            margin: 0;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 0px;
+            font-weight: 500;
         }
 
         .contact-info {
@@ -94,7 +114,7 @@
 
         .container {
             max-width: 900px;
-            margin: 2rem auto;
+            margin: 0rem auto;
             background: white;
             padding: 2rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -166,34 +186,40 @@
 <body>
 
     <header>
-    <div class="header-container">
-        <h1>DHRUB CHAUDHARY</h1>
-        <p>Experienced Software Engineer</p>
-        
-        <div class="contact-info">
-            <a href="mailto:dhurbac66@gmail.com">
-                <i class="fas fa-envelope"></i> dhurbac66@gmail.com
-            </a>
-            <a href="tel:9815360575">
-                <i class="fas fa-phone"></i> 9815360575
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
+        <div class="header-container">
+            <div class="profile-header">
+                <img src="profile.jpg" alt="Dhrub Chaudhary" class="profile-img">
+                <div class="title-text">
+                    <h1>DHRUB CHAUDHARY</h1>
+                    <p>Experienced Software Engineer</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <a href="mailto:dhurbac66@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> dhurbac66@gmail.com
+                </a>
+                <a href="tel:9815360575">
+                    <i class="fa-solid fa-phone"></i> 9815360575
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
 
     <div class="container">
         <section>
             <h2 class="section-title">About Me</h2>
-            <p>Results-driven Software Engineer with 4+ years of experience in frontend and full-stack development,
-                including banking solutions. Expert in building scalable UIs, secure financial systems, and reliable
-                backend services.</p>
+            <p>Results-driven Software Engineer with 4+ years of experience in frontend and full-stack
+                development, including banking solutions. Expert in building scalable UIs, secure
+                financial systems, and reliable backend services. Skilled in full-stack architecture, mobile
+                apps, e-commerce, APIs, databases, and web design.</p>
         </section>
 
         <section>
@@ -202,10 +228,16 @@
             <div class="experience-item">
                 <div class="job-title">Software Engineer</div>
                 <div class="job-meta">Amnil Technologies Pvt. Ltd. | 2025 – Present</div>
+                <div class="job-meta-address">Man Bhawan, Kathmandu 2025-Present ( Full Time)</div>
+
+                <div class="job-sector">Banking & Financial Solutions</div>
                 <ul>
-                    <li>Delivering banking and fintech solutions for major institutions like Himalayan Bank and
-                        Machhapuchchhre Bank.</li>
-                    <li>Contributing to secure, production-grade financial applications.</li>
+                    <li>Gained enterprise-level experience delivering banking and fintech solutions.</li>
+                    <li>Worked with major institutions: Manjushree Finance Limited, Prime CommercialBank,
+                        Machhapuchchhre Bank Limited (MBL), Himalayan Bank Limited.</li>
+                    <li>Contributed to secure systems, scalable platforms, and production-grade
+                        financial applications.</li>
+
                 </ul>
             </div>
 
@@ -215,7 +247,7 @@
                 <ul>
                     <li>Developed genealogy and caste management systems.</li>
                     <li>Managed AWS deployments and CI/CD pipelines.</li>
-                    <li>Optimized UI/UX for secure financial transactions.</li>
+                    <li>Optimized UI/UX,scalable Architecture for secure financial transactions.</li>
                 </ul>
             </div>
 
@@ -223,8 +255,10 @@
                 <div class="job-title">Associate Software Engineer</div>
                 <div class="job-meta">Tukaatu Services Pvt. Ltd. | 2020 – 2023</div>
                 <ul>
-                    <li>Built logistics web applications with real-time workflows.</li>
-                    <li>Developed full-scale e-commerce platforms with scalable UI systems.</li>
+                    <li>Built and maintained logistics web applications with focus on UI performance, real-time
+                        workflows, and user-friendly interfaces.</li>
+                    <li>Development for full-scale e-commerce platform, delivering scalable UI systems and seamless
+                        user experiences</li>
                 </ul>
             </div>
         </section>
